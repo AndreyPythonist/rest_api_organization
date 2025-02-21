@@ -107,12 +107,3 @@ class OrganizationDAL:
             if activity_id:
                 activity_id = activity_id.id
                 return activity_id
-
-
-# a = OrganizationDAL(db_session=async_session)
-# print(len(asyncio.run(a.get_org_by_radius_coordinate(55.800595, 37.636680, 2))))
-# print(asyncio.run(a.get_org_by_id(org_id="49be401d-7dc3-4a4b-bb69-5a9ce66066f9")))
-# print(asyncio.run(a.get_org_by_id(org_id="5097ae05-07c3-44a5-873a-2e3964c70852")))
-# print([i.get("name") for i in asyncio.run(a.get_org_by_parents_activity("Творог"))]) для второго пункта
-# print([i.get("name") for i in asyncio.run(a.get_org_by_children_activity("Молочная продукция"))]) для пятого пункта
-# print(asyncio.run(a.get_org_by_building_address("г.Москва, Бережковская наб., 38, стр. 1")))
